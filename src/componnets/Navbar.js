@@ -6,11 +6,13 @@ import { CgProfile } from "react-icons/cg";
 import { FiHeart, FiShoppingBag } from 'react-icons/fi';
 import "./Navbar.css";
 import Categories from "../pages/Categories";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="navbar">
-      <div>
+      <div onClick={() => navigate("/")}>
       <img src={Logo} alt="Logo" className="navbar-logo" />
       </div>
       <nav className="navbar-links">
