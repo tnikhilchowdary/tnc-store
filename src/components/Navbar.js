@@ -1,12 +1,13 @@
 import React from "react";
 import Logo from "../tnclogo.png";
-import { NavLink } from "react-router-dom";
-import { FaSearch } from 'react-icons/fa';
-import { CgProfile } from "react-icons/cg";
+import { NavLink, useNavigate } from "react-router-dom";
+import { FaCartPlus, FaSearch } from 'react-icons/fa';
 import { FiHeart, FiShoppingBag } from 'react-icons/fi';
+import { CgProfile } from 'react-icons/cg';
+
 import "./Navbar.css";
 import Categories from "../pages/Categories";
-import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
   const navigate = useNavigate();
