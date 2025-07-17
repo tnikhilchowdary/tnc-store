@@ -12,7 +12,6 @@ const Home = () => {
   return (
     <div>
     <div>
-    <img src={HomeLogo} className="logo-image"/>
     </div>
     <div>
       <h1>Shop By Category</h1>
