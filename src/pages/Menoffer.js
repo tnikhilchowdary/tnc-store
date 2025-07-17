@@ -1,20 +1,21 @@
-import react, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { data } from "react-router-dom";
-import ProductCard from "../componnets/ProductCard";
+import ProductCardStore from "../components/ProductCardStore";
 
 
 const Menoffer = () => {
     const [menOffer, setMenOffer] = useState([]);
+
     useEffect(() => {
         fetch("https://fakestoreapi.com/products/category/men's clothing")
         .then((res) => res.json())
         .then((data) => setMenOffer(data))
         .catch((err) => console.log("Error", err))
-    })
+    }, [])
     return(
-        <div>
+        <div className="category-container">
             {menOffer.map((men) => (
-                <ProductCard key={men.id} product={menOffer}/>
+                <ProductCardStore key={men.id} product={men} />
             ))}
         </div>
     )

@@ -1,5 +1,5 @@
 import React, { use, useEffect, useState } from "react";
-import ProductCard from "../componnets/ProductCard";
+import ProductCard from "../components/ProductCard";
 import "./Home.css";
 import HomeLogo from "../HomeLogo.png";
 import Categories from "./Categories";

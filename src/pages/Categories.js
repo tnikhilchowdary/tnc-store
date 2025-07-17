@@ -1,5 +1,5 @@
 import React from 'react';
-import Category from '../componnets/CategoryCard';
+import Category from '../components/CategoryCard';
 import "./Categories.css";
 
 const categoryData = [

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { data } from "react-router-dom";
-import ProductCard from "../componnets/ProductCard";
+import ProductCard from "../components/ProductCard";
 import "./Men.css";
 
 const Men = () => {
