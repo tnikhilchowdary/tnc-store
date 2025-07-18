@@ -29,11 +29,11 @@ const Navbar = () => {
         <input type="text" placeholder="Search for products..." className="search-input" />
       </div>
 
-      <div className="navbar-icons">
-        <div className="nav-icon"><CgProfile /><p>Profile</p></div>
-        <div className="nav-icon"><FiHeart /><p>Wishlist</p></div>
-        <div className="nav-icon"><FiShoppingBag /><p>Bag</p></div>
-      </div>
+      <nav className="navbar-icons">
+        <NavLink className="nav-icon"><CgProfile /><p>Profile</p></NavLink>
+        <NavLink to="/wishlist" className="nav-icon"><FiHeart /><p>Wishlist</p></NavLink>
+        <NavLink className="nav-icon"><FiShoppingBag /><p>Bag</p></NavLink>
+      </nav>
     </div>
   );
 };
