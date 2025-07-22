@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./ProductCard.css";
 import { FaHeart } from "react-icons/fa";
-import { WishListContext } from "../context/WishList"; 
+import WishList, { WishListContext } from "../context/WishList"; 
 
 const ProductCardStore = ({ product }) => {
   const { addToWishList } = useContext(WishListContext); 
@@ -13,7 +13,7 @@ const ProductCardStore = ({ product }) => {
       <p className="product-price">${product.price}</p>
       <div>
         <button className="wishlist-button" onClick={() => addToWishList(product)}>
-          <FaHeart /> WISHLIST
+          <FaHeart color={WishList ? "red" : "black" }/> WISHLIST
         </button>
       </div>
     </div>

@@ -7,6 +7,10 @@ import Menoffer from './pages/Menoffer';
 import Women from './pages/Women';
 import WishlistPage from './pages/WishlistPage';
 import WishList from './context/WishList'; 
+import Homedecoration from './pages/Homdecoration';
+import Beauty from './pages/Beauty';
+
+
 
 function App() {
   return (
@@ -20,6 +24,8 @@ function App() {
             <Route path="/women" element={<Women />} />
             <Route path="/menoffers" element={<Menoffer />} />
             <Route path="/wishlist" element={<WishlistPage />} />
+            <Route path="/Homedecoration" element={<Homedecoration />} />
+             <Route path="/beauty" element={<Beauty />} />
           </Routes>
         </WishList>
       </Router>
