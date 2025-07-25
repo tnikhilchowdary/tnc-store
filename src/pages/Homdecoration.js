@@ -1,12 +1,21 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
+import "./HomeDecoration.css";
 
 const Homedecoration = () => {
     const [home, setHome] = useState([]);
+    useEffect(() => {
+        fetch("https://dummyjson.com/products/category/home-decoration")
+        .then((res) => res.json())
+        .then((data) => setHome(data.products))
+        .catch((err) => console.log("Error", err))
+    }, [])
 
   return (
-    <div>
-     <h1>Welcome to the home page</h1>
+    <div className="home">
+    {home.map((item) => (
+        <ProductCard key={item.id} product={item}/>
+    ))}
     </div>
   );
 };

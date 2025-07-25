@@ -9,6 +9,8 @@ import WishlistPage from './pages/WishlistPage';
 import WishList from './context/WishList'; 
 import Homedecoration from './pages/Homdecoration';
 import Beauty from './pages/Beauty';
+import Login from './pages/Login';
+
 
 
 
@@ -26,6 +28,7 @@ function App() {
             <Route path="/wishlist" element={<WishlistPage />} />
             <Route path="/Homedecoration" element={<Homedecoration />} />
              <Route path="/beauty" element={<Beauty />} />
+             <Route path="/login" element={<Login />} />
           </Routes>
         </WishList>
       </Router>

@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { FaCartPlus, FaSearch } from 'react-icons/fa';
 import { FiHeart, FiShoppingBag } from 'react-icons/fi';
 import { CgProfile } from 'react-icons/cg';
+import ProfileDropDown from "../pages/ProfileDropDown";
 
 import "./Navbar.css";
 import Categories from "../pages/Categories";
@@ -30,7 +31,7 @@ const Navbar = () => {
       </div>
 
       <nav className="navbar-icons">
-        <NavLink className="nav-icon"><CgProfile /><p>Profile</p></NavLink>
+        <ProfileDropDown />
         <NavLink to="/wishlist" className="nav-icon"><FiHeart /><p>Wishlist</p></NavLink>
         <NavLink className="nav-icon"><FiShoppingBag /><p>Bag</p></NavLink>
       </nav>
